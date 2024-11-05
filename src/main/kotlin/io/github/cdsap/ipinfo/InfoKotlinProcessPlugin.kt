@@ -19,7 +19,7 @@ class IpInfoPlugin : Plugin<Project> {
             if (develocityConfiguration != null) {
                 buildScanDevelocityReporting(project, develocityConfiguration)
             } else if (enterpriseExtension != null) {
-                buildScanReporting(project, enterpriseExtension)
+                buildScanEnterpriseReporting(project, enterpriseExtension)
             }
         }
     }
@@ -37,7 +37,7 @@ class IpInfoPlugin : Plugin<Project> {
         }
     }
 
-    private fun buildScanReporting(
+    private fun buildScanEnterpriseReporting(
         project: Project,
         buildScanExtension: BuildScanExtension
     ) {
