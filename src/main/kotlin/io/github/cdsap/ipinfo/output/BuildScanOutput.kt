@@ -9,37 +9,13 @@ class BuildScanOutput(
 ) {
 
     fun addGeolocationInfoToBuildScan() {
-        buildScanExtension.value(
-            "City",
-            ip.city
-        )
-        buildScanExtension.value(
-            "Country",
-            ip.country
-        )
-        buildScanExtension.value(
-            "State",
-            ip.regionName
-        )
-        buildScanExtension.value(
-            "Ip",
-            ip.query
-        )
-        buildScanExtension.value(
-            "Isp",
-            ip.isp
-        )
-        buildScanExtension.value(
-            "Timezone",
-            ip.timeZone
-        )
-        buildScanExtension.value(
-            "Lat",
-            ip.lat
-        )
-        buildScanExtension.value(
-            "Long",
-            ip.long
-        )
+        buildScanExtension.value("City", ip.city)
+        buildScanExtension.value("Country", ip.country)
+        buildScanExtension.value("State", ip.regionName)
+        buildScanExtension.value("Ip", ip.query)
+        buildScanExtension.value("Isp", ip.isp)
+        buildScanExtension.value("Timezone", ip.timeZone)
+        buildScanExtension.value("Lat", ip.lat)
+        buildScanExtension.value("Long", ip.long)
     }
 }

@@ -15,6 +15,7 @@ java {
 }
 
 dependencies {
+    implementation("com.gradle:develocity-gradle-plugin:3.18.1")
     implementation("com.gradle.enterprise:com.gradle.enterprise.gradle.plugin:3.12.1")
     testImplementation("junit:junit:4.13.2")
 }
